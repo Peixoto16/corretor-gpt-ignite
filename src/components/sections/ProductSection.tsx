@@ -14,55 +14,55 @@ const ProductSection = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             {/* Main Product */}
-            <div className="bg-gradient-dark p-8 rounded-xl border border-primary/20 hover:shadow-elegant transition-all duration-300">
+            <div className="bg-gradient-dark p-8 rounded-xl border border-primary/20 hover:shadow-glow hover:scale-105 transition-all duration-300 animate-slide-in-left group">
               <div className="flex items-center gap-3 mb-6">
-                <Zap className="w-8 h-8 text-primary" />
-                <h3 className="text-2xl font-bold">Gestor de Tráfego Imobiliário Pro</h3>
+                <Zap className="w-8 h-8 text-primary group-hover:animate-bounce-gentle" />
+                <h3 className="text-2xl font-bold group-hover:text-primary transition-colors duration-300">Gestor de Tráfego Imobiliário Pro</h3>
               </div>
               
-              <p className="text-lg text-primary font-semibold mb-4">(Agente GPT)</p>
+              <p className="text-lg text-primary font-semibold mb-4 group-hover:animate-pulse">(Agente GPT)</p>
               
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed group-hover:text-foreground transition-colors duration-300">
                 Treinado exclusivamente para o mercado imobiliário, para criar e otimizar campanhas 
                 de tráfego com foco em trazer clientes compradores de imóveis.
               </p>
 
               <div className="space-y-4 mb-6">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <span>Em questão de minutos definimos a estrutura completa das suas novas campanhas: Imóveis → Público → Criativos → Campanhas no ar</span>
+                <div className="flex items-start gap-3 group/item hover:bg-primary/5 p-2 rounded transition-colors duration-300">
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0 group-hover/item:animate-bounce-gentle" />
+                  <span className="group-hover/item:text-primary transition-colors duration-300">Em questão de minutos definimos a estrutura completa das suas novas campanhas: Imóveis → Público → Criativos → Campanhas no ar</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <span>Crie suas campanhas apenas COPIANDO E COLANDO a estrutura, sem precisar de nenhum conhecimento em tráfego.</span>
+                <div className="flex items-start gap-3 group/item hover:bg-primary/5 p-2 rounded transition-colors duration-300">
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0 group-hover/item:animate-bounce-gentle" />
+                  <span className="group-hover/item:text-primary transition-colors duration-300">Crie suas campanhas apenas COPIANDO E COLANDO a estrutura, sem precisar de nenhum conhecimento em tráfego.</span>
                 </div>
               </div>
             </div>
 
             {/* Video Lessons */}
-            <div className="bg-background p-8 rounded-xl border border-primary/20 hover:shadow-elegant transition-all duration-300">
+            <div className="bg-background p-8 rounded-xl border border-primary/20 hover:shadow-glow hover:scale-105 transition-all duration-300 animate-slide-in-left group" style={{ animationDelay: '0.2s' }}>
               <div className="flex items-center gap-3 mb-6">
-                <Video className="w-8 h-8 text-primary" />
-                <h3 className="text-2xl font-bold">Vídeo Aulas com Gabriel</h3>
+                <Video className="w-8 h-8 text-primary group-hover:animate-bounce-gentle" />
+                <h3 className="text-2xl font-bold group-hover:text-primary transition-colors duration-300">Vídeo Aulas com Gabriel</h3>
               </div>
               
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed group-hover:text-foreground transition-colors duration-300">
                 Aulas práticas com o passo a passo completo da estratégia responsável por vender 
                 mais de R$ 50 milhões em VGV até o momento.
               </p>
 
               <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <span>Passo a passo completo da estratégia</span>
+                <div className="flex items-start gap-3 group/item hover:bg-primary/5 p-2 rounded transition-colors duration-300">
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0 group-hover/item:animate-bounce-gentle" />
+                  <span className="group-hover/item:text-primary transition-colors duration-300">Passo a passo completo da estratégia</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <span>Casos práticos e exemplos reais</span>
+                <div className="flex items-start gap-3 group/item hover:bg-primary/5 p-2 rounded transition-colors duration-300">
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0 group-hover/item:animate-bounce-gentle" />
+                  <span className="group-hover/item:text-primary transition-colors duration-300">Casos práticos e exemplos reais</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <span>Dicas avançadas de otimização</span>
+                <div className="flex items-start gap-3 group/item hover:bg-primary/5 p-2 rounded transition-colors duration-300">
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0 group-hover/item:animate-bounce-gentle" />
+                  <span className="group-hover/item:text-primary transition-colors duration-300">Dicas avançadas de otimização</span>
                 </div>
               </div>
             </div>

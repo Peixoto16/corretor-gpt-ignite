@@ -16,43 +16,43 @@ const PricingSection = () => {
           </p>
 
           {/* Price Card */}
-          <div className="bg-gradient-dark p-8 rounded-2xl border-2 border-primary/30 shadow-glow max-w-md mx-auto mb-12">
+          <div className="bg-gradient-dark p-8 rounded-2xl border-2 border-primary/30 shadow-glow max-w-md mx-auto mb-12 hover:scale-105 hover:shadow-elegant transition-all duration-300 animate-scale-in group">
             <div className="text-center">
               {/* Original Price Crossed Out */}
-              <div className="text-lg text-muted-foreground line-through mb-2">
+              <div className="text-lg text-muted-foreground line-through mb-2 group-hover:animate-pulse">
                 De R$ 3.000/mês
               </div>
               
               {/* Main Price */}
-              <div className="text-6xl font-bold text-primary mb-4">
+              <div className="text-6xl font-bold text-primary mb-4 group-hover:animate-bounce-gentle bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-gradient-x">
                 R$100
               </div>
               
               {/* Payment Options */}
-              <div className="text-lg text-muted-foreground mb-6">
-                ou <span className="text-foreground font-semibold">12x de R$10,29</span>
+              <div className="text-lg text-muted-foreground mb-6 group-hover:text-foreground transition-colors duration-300">
+                ou <span className="text-foreground font-semibold group-hover:text-primary transition-colors duration-300">12x de R$10,29</span>
               </div>
               
               {/* Payment Icons */}
               <div className="flex items-center justify-center gap-4 mb-6">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <CreditCard className="w-4 h-4" />
+                <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary transition-colors duration-300">
+                  <CreditCard className="w-4 h-4 group-hover:animate-bounce-gentle" />
                   <span>Cartão</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Clock className="w-4 h-4" />
+                <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-primary transition-colors duration-300">
+                  <Clock className="w-4 h-4 group-hover:animate-bounce-gentle" style={{ animationDelay: '0.2s' }} />
                   <span>Acesso Imediato</span>
                 </div>
               </div>
 
               {/* CTA Button */}
-              <Button variant="hero" size="lg" className="w-full text-lg py-6 mb-4">
+              <Button variant="hero" size="lg" className="w-full text-lg py-6 mb-4 hover:scale-105 hover:shadow-glow transition-all duration-300 group/button">
                 SIM! QUERO ACESSAR AGORA
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-5 h-5 ml-2 group-hover/button:translate-x-1 transition-transform duration-300" />
               </Button>
               
               {/* Security Text */}
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-muted-foreground group-hover:text-foreground transition-colors duration-300">
                 🔒 Compra 100% segura • Acesso imediato
               </p>
             </div>

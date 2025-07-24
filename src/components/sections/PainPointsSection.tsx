@@ -34,12 +34,13 @@ const PainPointsSection = () => {
             {painPoints.map((pain, index) => (
               <div 
                 key={index}
-                className="flex items-start gap-4 p-6 bg-background/50 rounded-lg border border-destructive/20 hover:border-destructive/40 transition-colors"
+                className="flex items-start gap-4 p-6 bg-background/50 rounded-lg border border-destructive/20 hover:border-destructive/40 hover:shadow-elegant hover:bg-background/70 transition-all duration-300 animate-slide-in-left group"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex-shrink-0 w-8 h-8 bg-destructive/20 rounded-full flex items-center justify-center mt-1">
-                  <X className="w-4 h-4 text-destructive" />
+                <div className="flex-shrink-0 w-8 h-8 bg-destructive/20 rounded-full flex items-center justify-center mt-1 group-hover:bg-destructive/30 group-hover:scale-110 transition-all duration-300">
+                  <X className="w-4 h-4 text-destructive group-hover:animate-bounce-gentle" />
                 </div>
-                <p className="text-lg leading-relaxed">{pain}</p>
+                <p className="text-lg leading-relaxed group-hover:text-foreground transition-colors duration-300">{pain}</p>
               </div>
             ))}
           </div>

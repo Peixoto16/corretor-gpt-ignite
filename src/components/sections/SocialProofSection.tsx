@@ -55,28 +55,29 @@ const SocialProofSection = () => {
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index}
-                className="bg-card p-6 rounded-xl border border-primary/20 hover:shadow-elegant transition-all duration-300"
+                className="bg-card p-6 rounded-xl border border-primary/20 hover:shadow-glow hover:scale-105 hover:border-primary/40 transition-all duration-300 animate-fade-in-up group"
+                style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                    <Star key={i} className="w-4 h-4 fill-primary text-primary group-hover:animate-bounce-gentle transition-all duration-300" style={{ animationDelay: `${i * 0.1}s` }} />
                   ))}
                 </div>
                 
-                <Quote className="w-8 h-8 text-primary/40 mb-4" />
+                <Quote className="w-8 h-8 text-primary/40 mb-4 group-hover:text-primary/60 transition-colors duration-300" />
                 
-                <p className="text-foreground mb-6 leading-relaxed">
+                <p className="text-foreground mb-6 leading-relaxed group-hover:text-primary/90 transition-colors duration-300">
                   "{testimonial.content}"
                 </p>
                 
-                <div className="border-t border-primary/20 pt-4">
+                <div className="border-t border-primary/20 pt-4 group-hover:border-primary/30 transition-colors duration-300">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-semibold">{testimonial.name}</p>
+                      <p className="font-semibold group-hover:text-primary transition-colors duration-300">{testimonial.name}</p>
                       <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-sm font-semibold text-primary">{testimonial.result}</p>
+                      <p className="text-sm font-semibold text-primary group-hover:animate-pulse">{testimonial.result}</p>
                     </div>
                   </div>
                 </div>

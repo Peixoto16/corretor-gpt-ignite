@@ -33,12 +33,13 @@ const ResultsSection = () => {
             {results.map((result, index) => (
               <div 
                 key={index}
-                className="flex items-start gap-4 p-6 bg-card/50 rounded-lg border border-primary/20 hover:border-primary/40 hover:shadow-elegant transition-all duration-300"
+                className="flex items-start gap-4 p-6 bg-card/50 rounded-lg border border-primary/20 hover:border-primary/40 hover:shadow-glow hover:scale-105 transition-all duration-300 animate-scale-in group"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex-shrink-0 w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center mt-1">
+                <div className="flex-shrink-0 w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center mt-1 group-hover:bg-primary/30 group-hover:animate-bounce-gentle transition-all duration-300">
                   <CheckCircle className="w-4 h-4 text-primary" />
                 </div>
-                <p className="text-lg leading-relaxed font-medium">{result}</p>
+                <p className="text-lg leading-relaxed font-medium group-hover:text-primary/90 transition-colors duration-300">{result}</p>
               </div>
             ))}
           </div>

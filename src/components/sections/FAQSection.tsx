@@ -58,22 +58,23 @@ const FAQSection = () => {
             {faqs.map((faq, index) => (
               <div 
                 key={index}
-                className="bg-card border border-primary/20 rounded-lg hover:shadow-elegant transition-all duration-300"
+                className="bg-card border border-primary/20 rounded-lg hover:shadow-glow hover:scale-105 transition-all duration-300 animate-fade-in-up group"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <button 
                   onClick={() => toggleItem(index)}
-                  className="w-full p-6 text-left flex items-center justify-between hover:bg-primary/5 transition-colors rounded-lg"
+                  className="w-full p-6 text-left flex items-center justify-between hover:bg-primary/5 transition-colors rounded-lg group-hover:bg-primary/10"
                 >
-                  <h3 className="text-lg font-semibold pr-4">{faq.question}</h3>
+                  <h3 className="text-lg font-semibold pr-4 group-hover:text-primary transition-colors duration-300">{faq.question}</h3>
                   {openItems.includes(index) ? (
-                    <ChevronUp className="w-5 h-5 text-primary flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-primary flex-shrink-0 animate-bounce-gentle" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-primary flex-shrink-0" />
+                    <ChevronDown className="w-5 h-5 text-primary flex-shrink-0 group-hover:animate-bounce-gentle" />
                   )}
                 </button>
                 
                 {openItems.includes(index) && (
-                  <div className="px-6 pb-6">
+                  <div className="px-6 pb-6 animate-fade-in-up">
                     <div className="border-t border-primary/20 pt-4">
                       <p className="text-muted-foreground leading-relaxed">
                         {faq.answer}
