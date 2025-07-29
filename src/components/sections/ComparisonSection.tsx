@@ -93,8 +93,8 @@ const ComparisonSection = () => {
 
         {/* Bottom CTAs */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12 max-w-7xl mx-auto">
-          <div className="text-center p-6 bg-gradient-dark rounded-xl border border-primary/20">
-            <p className="text-lg font-semibold text-primary mb-2">
+          <div className="text-center p-6 bg-gradient-dark rounded-xl border border-destructive/20">
+            <p className="text-lg font-semibold text-destructive mb-2">
               Chega de perder oportunidades!
             </p>
             <p className="text-muted-foreground text-sm">
