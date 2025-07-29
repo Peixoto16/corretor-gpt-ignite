@@ -44,7 +44,7 @@ const FooterSection = () => {
             <div className="pt-8 border-t border-primary/20">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                 <p className="text-sm text-muted-foreground">
-                  © 2024 New Media. Todos os direitos reservados.
+                  Todos os Direitos Reservados © Um Produto do Grupo New Media Marketing LTDA - CNPJ: 55.970.171/0001-35
                 </p>
                 
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">

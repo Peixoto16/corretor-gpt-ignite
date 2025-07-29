@@ -3,24 +3,20 @@ import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
 
 const faqs = [
   {
-    question: "Preciso ser especialista em tráfego pago para usar?",
-    answer: "Não! Nossa estratégia foi desenvolvida justamente para corretores que não têm conhecimento técnico em tráfego. O sistema GPT faz todo o trabalho pesado, você só precisa copiar e colar as estruturas criadas."
+    question: "Preciso pagar o ChatGPT Plus para usar os Agentes GPT?",
+    answer: "Não. Os nossos Agentes GPT funcionam normalmente no plano gratuito do ChatGPT."
   },
   {
-    question: "Preciso pagar o ChatGPT Plus?",
-    answer: "Sim, é necessário ter o ChatGPT Plus para acessar os agentes GPT personalizados. O investimento de R$20/mês no ChatGPT Plus se paga facilmente com uma única venda extra que você fizer usando nossa estratégia."
+    question: "Mesmo sem experiência com tráfego pago, eu vou conseguir usar?",
+    answer: "Sim. O GPT foi feito até para os iniciantes conseguirem subir as suas campanhas. Ele guia você passo a passo e ainda temos vídeo aulas práticas te mostrando o caminho completo, mesmo que nunca tenha subido um anúncio."
   },
   {
-    question: "Funciona para todo tipo de imóvel?",
-    answer: "Sim! Nossa estratégia funciona para qualquer tipo de imóvel: apartamentos, casas, terrenos, imóveis comerciais, lançamentos, usados, etc. O sistema se adapta ao seu nicho e público específico."
+    question: "O GPT serve para qualquer tipo de imóvel?",
+    answer: "Sim. Você pode usar o GPT para QUALQUER tipo de imóvel ou campanhas. Lançamentos, Imóveis de Terceiros, Imóveis como Investimento… desde MCMV até o Alto Luxo. Ele ajuda a definir o público ideal e adaptar sua campanha para o tipo de imóvel que você tem."
   },
   {
-    question: "Quanto tempo demora para ver resultados?",
-    answer: "Muitos alunos começam a ver os primeiros leads qualificados nas primeiras semanas. O importante é seguir exatamente o que ensinamos e ter consistência na aplicação."
-  },
-  {
-    question: "Tenho suporte se tiver dúvidas?",
-    answer: "Sim! Você terá acesso ao nosso suporte dedicado, grupo de alunos e aulas ao vivo para tirar todas as suas dúvidas e garantir o seu sucesso."
+    question: "Preciso ter uma imobiliária ou equipe para aproveitar esse produto?",
+    answer: "Não. O GPT foi pensado principalmente para corretores autônomos e pequenas equipes. Ele reduz a necessidade de ter agência ou um time de marketing interno."
   }
 ];
 
