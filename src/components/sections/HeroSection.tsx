@@ -49,21 +49,6 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Trust indicators */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="text-center animate-fade-in-up hover:scale-105 transition-transform duration-300" style={{ animationDelay: '0.8s' }}>
-              <div className="text-3xl font-bold text-primary mb-2 hover:text-primary/80 transition-colors duration-300">R$ 50mi+</div>
-              <div className="text-muted-foreground">em VGV gerado</div>
-            </div>
-            <div className="text-center animate-fade-in-up hover:scale-105 transition-transform duration-300" style={{ animationDelay: '1s' }}>
-              <div className="text-3xl font-bold text-primary mb-2 hover:text-primary/80 transition-colors duration-300">500+</div>
-              <div className="text-muted-foreground">Corretores atendidos</div>
-            </div>
-            <div className="text-center animate-fade-in-up hover:scale-105 transition-transform duration-300" style={{ animationDelay: '1.2s' }}>
-              <div className="text-3xl font-bold text-primary mb-2 hover:text-primary/80 transition-colors duration-300">98%</div>
-              <div className="text-muted-foreground">Taxa de sucesso</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
