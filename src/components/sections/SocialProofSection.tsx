@@ -1,30 +1,11 @@
 import { Star, Quote, TrendingUp } from "lucide-react";
 
-const testimonials = [
-  {
-    name: "Carlos Silva",
-    role: "Corretor Autônomo",
-    content: "Consegui vender 3 imóveis no primeiro mês usando a estratégia. Minha renda triplicou!",
-    result: "+R$ 45.000 em comissões",
-    rating: 5
-  },
-  {
-    name: "Marina Santos",
-    role: "Corretora",
-    content: "Nunca imaginei que conseguiria gerar leads qualificados com tão pouco investimento.",
-    result: "12 visitas/semana",
-    rating: 5
-  },
-  {
-    name: "Roberto Lima",
-    role: "Corretor Sênior",
-    content: "A estratégia é simples e funciona. Agora tenho uma agenda cheia de clientes interessados.",
-    result: "+300% leads qualificados",
-    rating: 5
-  }
-];
+import { useState } from "react";
 
 const SocialProofSection = () => {
+  const [modalImg, setModalImg] = useState<string|null>(null);
+  const handleOpen = (img: string) => setModalImg(img);
+  const handleClose = () => setModalImg(null);
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -51,38 +32,45 @@ const SocialProofSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className="bg-card p-6 rounded-xl border border-primary/20 hover:shadow-glow hover:scale-105 hover:border-primary/40 transition-all duration-300 animate-fade-in-up group"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-primary text-primary group-hover:animate-bounce-gentle transition-all duration-300" style={{ animationDelay: `${i * 0.1}s` }} />
-                  ))}
-                </div>
-                
-                <Quote className="w-8 h-8 text-primary/40 mb-4 group-hover:text-primary/60 transition-colors duration-300" />
-                
-                <p className="text-foreground mb-6 leading-relaxed group-hover:text-primary/90 transition-colors duration-300">
-                  "{testimonial.content}"
-                </p>
-                
-                <div className="border-t border-primary/20 pt-4 group-hover:border-primary/30 transition-colors duration-300">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="font-semibold group-hover:text-primary transition-colors duration-300">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-sm font-semibold text-primary group-hover:animate-pulse">{testimonial.result}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {["IMG_9723.jpg", "IMG_9724.jpg", "IMG_9725.jpg", "IMG_9727.jpg"].map((img, idx) => (
+  <div key={img} className="flex flex-col items-center">
+    <img
+      src={`/img/${img}`}
+      alt={`Prova social ${idx + 1}`}
+      className="rounded-xl shadow-lg border border-primary/20 w-full h-96 object-cover object-center hover:scale-105 transition-transform duration-300 bg-white cursor-pointer"
+      loading="lazy"
+      onClick={() => handleOpen(img)}
+    />
+  </div>
+))}
+
+{/* Modal de Imagem */}
+{modalImg && (
+  <div
+    className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+    onClick={handleClose}
+  >
+    <div
+      className="relative max-w-3xl w-full flex justify-center"
+      onClick={e => e.stopPropagation()}
+    >
+      <button
+        className="absolute -top-6 -right-6 bg-white rounded-full shadow p-2 text-black hover:bg-primary hover:text-white transition-colors z-10"
+        onClick={handleClose}
+        aria-label="Fechar imagem"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+      </button>
+      <img
+        src={`/img/${modalImg}`}
+        alt="Prova social ampliada"
+        className="rounded-xl max-h-[80vh] w-auto max-w-full shadow-2xl border-2 border-primary bg-white"
+        style={{objectFit: "contain"}}
+      />
+    </div>
+  </div>
+)}
           </div>
 
           <div className="text-center mt-12">

@@ -1,4 +1,4 @@
-import gabrielImage from "@/assets/gabriel-rodrigues.jpg";
+
 
 const AboutSection = () => {
   return (
@@ -10,9 +10,9 @@ const AboutSection = () => {
             <div className="text-center lg:text-left">
               <div className="relative inline-block">
                 <img 
-                  src={gabrielImage} 
-                  alt="Gabriel Rodrigues" 
-                  className="w-80 h-80 rounded-2xl object-cover border-4 border-primary/20 shadow-elegant"
+                  src={"/img/TMS00103.jpg"} 
+                  alt="Foto TMS00103" 
+                  className="w-96 h-100 rounded-2xl object-cover border-4 border-primary/20 shadow-elegant"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-bold text-sm">
                   Expert em Vendas

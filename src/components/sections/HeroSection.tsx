@@ -3,9 +3,15 @@ import { ArrowRight, Target, TrendingUp } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-gradient-hero relative overflow-hidden">
+    <section className="h-auto bg-gradient-hero relative overflow-hidden rounded-b-3xl">
       {/* Animated Background decoration */}
       <div className="absolute inset-0">
+        {/* Imagem de fundo decorativa */}
+        <img 
+          src="/img/TMS00212.png" 
+          alt="Fundo decorativo" 
+          className="absolute left-1/2 bottom-0 translate-x-[-50%] md:top-1/2 md:bottom-auto md:-translate-y-1/2 w-[3500px] sm:w-[600px] max-w-full opacity-30 pointer-events-none select-none z-0"
+        />
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-radial from-primary/5 to-transparent animate-pulse-slow"></div>
@@ -44,7 +50,9 @@ const HeroSection = () => {
           {/* CTA Button */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
             <Button variant="hero" size="lg" className="text-lg px-8 py-6 mb-16 hover:scale-105 hover:shadow-glow transition-all duration-300 group">
-              QUERO MEU GESTOR DE TRÁFEGO IMOBILIÁRIO PRO
+  QUERO MEU GESTOR DE TRÁFEGO
+  <br className="block sm:hidden" />
+  IMOBILIÁRIO PRO
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
           </div>
