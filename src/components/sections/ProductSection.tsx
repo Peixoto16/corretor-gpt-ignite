@@ -1,9 +1,9 @@
-import { CheckCircle, Gift, Zap, Video, Users, Target } from "lucide-react";
+import { CheckCircle, Gift, Zap, Video, Users, Target, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ProductSection = () => {
   return (
-    <section className="py-20 bg-card">
+    <section className="py-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -150,6 +150,8 @@ const ProductSection = () => {
             </div>
           </div>
         </div>
+        
+
       </div>
     </section>
   );

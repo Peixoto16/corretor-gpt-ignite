@@ -1,4 +1,5 @@
 import { X, AlertTriangle, CheckCircle, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const painPoints = [
   "Ser o corretor secretária que só responde às mesmas perguntas dos clientes",
@@ -21,7 +22,7 @@ const results = [
 
 const ComparisonSection = () => {
   return (
-    <section className="py-20 bg-card">
+    <section className="py-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
           {/* Pain Points */}
@@ -109,6 +110,14 @@ const ComparisonSection = () => {
               Com nossa estratégia, você terá as ferramentas necessárias para dominar o mercado imobiliário.
             </p>
           </div>
+        </div>
+        
+        {/* Botão CTA */}
+        <div className="text-center mt-12">
+          <Button variant="hero" size="lg" className="w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-12 py-4 sm:py-7 font-bold leading-tight w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-8 py-4 sm:py-6 mb-16 hover:scale-105 hover:shadow-glow shadow-glow animate-pulse duration-2000 transition-all font-bold rounded-md text-center leading-tight">
+            <span className="block sm:inline">[QUERO MEU GESTOR DE</span>
+            <span className="block sm:inline sm:ml-1">TRÁFEGO IMOBILIÁRIO PRO]</span>
+          </Button>
         </div>
       </div>
     </section>

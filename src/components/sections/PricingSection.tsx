@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CreditCard, Clock } from "lucide-react";
+import { ArrowRight, CreditCard, Clock, Zap, BadgeCheck, Headset } from "lucide-react";
 
 const PricingSection = () => {
   return (
@@ -16,12 +16,13 @@ const PricingSection = () => {
           </p>
 
           {/* Price Card */}
-          <div className="bg-gradient-dark p-8 rounded-2xl border-2 border-primary/30 shadow-glow max-w-md mx-auto mb-12 hover:scale-105 hover:shadow-elegant transition-all duration-300 animate-scale-in group">
+          <div className="bg-gradient-dark p-8 rounded-2xl border-2 border-primary/30 shadow-glow max-w-2xl w-full mx-auto mb-12 hover:scale-105 hover:shadow-elegant transition-all duration-300 animate-pulse group" style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}>
             <div className="text-center">
               {/* Original Price Crossed Out */}
               <div className="text-lg text-muted-foreground line-through mb-2 group-hover:animate-pulse">
                 De R$ 3.000/mês
               </div>
+              <div className="text-base font-bold text-primary mb-2 animate-bounce-slow">Por APENAS</div>
               
               {/* Main Price */}
               <div className="text-6xl font-bold text-primary mb-4 group-hover:animate-bounce-gentle bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-gradient-x">
@@ -46,8 +47,8 @@ const PricingSection = () => {
               </div>
 
               {/* CTA Button */}
-              <Button variant="hero" size="lg" className="w-full text-lg py-6 mb-4 hover:scale-105 hover:shadow-glow transition-all duration-300 group/button">
-                SIM! QUERO ACESSAR AGORA
+              <Button variant="hero" size="lg" className="w-full text-lg py-6 px-8 mb-4 hover:scale-105 hover:shadow-glow transition-all duration-300 group/button">
+                <span className="mx-0">QUERO ACESSAR AGORA</span>
                 <ArrowRight className="w-5 h-5 ml-2 group-hover/button:translate-x-1 transition-transform duration-300" />
               </Button>
               
@@ -62,17 +63,17 @@ const PricingSection = () => {
           <div className="bg-card p-6 rounded-xl border border-primary/20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-2xl font-bold text-primary mb-2">⚡</div>
+                <Zap className="mx-auto w-8 h-8 text-green-500 mb-2" />
                 <div className="font-semibold mb-1">Acesso Imediato</div>
                 <div className="text-sm text-muted-foreground">Receba tudo na hora</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary mb-2">🎯</div>
+                <BadgeCheck className="mx-auto w-8 h-8 text-green-500 mb-2" />
                 <div className="font-semibold mb-1">Resultados Garantidos</div>
                 <div className="text-sm text-muted-foreground">Estratégia validada</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary mb-2">🚀</div>
+                <Headset className="mx-auto w-8 h-8 text-green-500 mb-2" />
                 <div className="font-semibold mb-1">Suporte Total</div>
                 <div className="text-sm text-muted-foreground">1 ano de acesso</div>
               </div>
@@ -81,8 +82,9 @@ const PricingSection = () => {
 
           {/* Urgency */}
           <div className="mt-8 p-4 bg-primary/10 rounded-lg border border-primary/20">
-            <p className="text-primary font-semibold">
-              ⏰ Oferta limitada - Garante o seu acesso agora mesmo!
+            <p className="text-primary font-semibold flex items-center justify-center gap-2">
+              <Clock className="w-5 h-5 text-green-500" />
+              Oferta limitada - Garante o seu acesso agora mesmo!
             </p>
           </div>
         </div>

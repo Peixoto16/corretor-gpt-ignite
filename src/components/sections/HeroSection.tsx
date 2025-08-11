@@ -3,7 +3,7 @@ import { ArrowRight, Target, TrendingUp } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="h-auto bg-gradient-hero relative overflow-hidden rounded-b-3xl">
+    <section className="h-auto bg-background relative overflow-hidden rounded-b-[40px]">
       {/* Animated Background decoration */}
       <div className="absolute inset-0">
         {/* Imagem de fundo decorativa */}
@@ -28,33 +28,24 @@ const HeroSection = () => {
 
           {/* Main headline */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in-up">
-            A estratégia que faz{" "}
-            <span className="text-primary bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-gradient-x">Corretores venderem</span>{" "}
-            Imóveis de{" "}
-            <span className="text-primary bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-gradient-x">+ R$500 mil</span>{" "}
-            com menos de{" "}
-            <span className="text-primary bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-gradient-x">R$400</span>{" "}
-            em Tráfego Pago
-          </h1>
+  Venda Imóveis acima de <span className="text-primary">R$ 500 mil com menos de R$400</span> em Tráfego Pago
+</h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Mesmo sendo corretor autônomo, sem gestor de tráfego e sem depender de agências.
-          </p>
+  Mesmo sendo <span className="text-primary font-extrabold drop-shadow-glow animate-fade-in-up">corretor</span> de Imóveis autonomo, sem <span className="text-primary font-extrabold drop-shadow-glow animate-fade-in-up" style={{animationDelay: '0.3s'}}>gestor</span> de tráfego e sem <span className="text-primary font-extrabold drop-shadow-glow animate-fade-in-up" style={{animationDelay: '0.5s'}}>depender de agências</span>.
+</p>
 
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            Utilize imediatamente o nosso mecanismo validado, para criar campanhas ultra segmentadas 
-            e trazer leads que realmente comprem seus imóveis.
-          </p>
+  <span className="font-extrabold text-primary drop-shadow-glow">Utilize imediatamente o nosso mecanismo validado</span>, para criar campanhas ultra segmentadas e trazer leads que realmente comprem seus imóveis.
+</p>
 
           {/* CTA Button */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6 mb-16 hover:scale-105 hover:shadow-glow transition-all duration-300 group">
-  QUERO MEU GESTOR DE TRÁFEGO
-  <br className="block sm:hidden" />
-  IMOBILIÁRIO PRO
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-            </Button>
+            <Button variant="hero" size="lg" className="w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-8 py-4 sm:py-6 mb-16 hover:scale-105 hover:shadow-glow shadow-glow animate-pulse duration-2000 hover:scale-105 hover:shadow-glow transition-all font-bold rounded-md text-center leading-tight">
+  <span className="block sm:inline">[QUERO MEU GESTOR DE</span>
+  <span className="block sm:inline sm:ml-1">TRÁFEGO IMOBILIÁRIO PRO]</span>
+</Button>
           </div>
 
         </div>

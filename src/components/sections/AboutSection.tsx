@@ -1,8 +1,8 @@
-
+import { Button } from "@/components/ui/button";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 bg-card">
+    <section className="py-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -10,7 +10,7 @@ const AboutSection = () => {
             <div className="text-center lg:text-left">
               <div className="relative inline-block">
                 <img 
-                  src={"/img/TMS00103.jpg"} 
+                  src={`${import.meta.env.BASE_URL}img/TMS00103.jpg`} 
                   alt="Foto TMS00103" 
                   className="w-96 h-100 rounded-2xl object-cover border-4 border-primary/20 shadow-elegant"
                 />
@@ -29,6 +29,8 @@ const AboutSection = () => {
                 <p className="text-xl text-muted-foreground">
                   Empresário, 29 anos
                 </p>
+                
+
               </div>
 
               <div className="space-y-6 text-lg leading-relaxed">
@@ -65,6 +67,13 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
+        </div>
+        {/* Botão CTA no final da seção */}
+        <div className="text-center mt-12">
+          <Button variant="hero" size="lg" className="w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-12 py-4 sm:py-7 font-bold leading-tight w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-8 py-4 sm:py-6 mb-16 hover:scale-105 hover:shadow-glow shadow-glow animate-pulse duration-2000 transition-all font-bold rounded-md text-center leading-tight">
+            <span className="block sm:inline">[QUERO MEU GESTOR DE</span>
+            <span className="block sm:inline sm:ml-1">TRÁFEGO IMOBILIÁRIO PRO]</span>
+          </Button>
         </div>
       </div>
     </section>

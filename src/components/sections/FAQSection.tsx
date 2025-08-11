@@ -84,12 +84,8 @@ const FAQSection = () => {
 
           <div className="text-center mt-12">
             <div className="bg-gradient-dark p-6 rounded-xl border border-primary/20">
-              <p className="text-lg mb-4">
-                Ainda tem alguma dúvida? 
-              </p>
-              <p className="text-muted-foreground">
-                Entre em contato conosco e nossa equipe estará pronta para ajudar!
-              </p>
+              <h3 className="text-2xl font-bold text-primary mb-2">Agente Imobiliário</h3>
+              <p className="text-lg text-muted-foreground">A estratégia que transforma corretores em vendedores de alto nível</p>
             </div>
           </div>
         </div>
