@@ -14,7 +14,7 @@ const AboutSection = () => {
                   alt="Foto TMS00103" 
                   className="w-96 h-100 rounded-2xl object-cover border-4 border-primary/20 shadow-elegant"
                 />
-                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-bold text-sm">
+                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-bold text-sm animate-bounce">
                   Expert em Vendas
                 </div>
               </div>
@@ -54,23 +54,13 @@ const AboutSection = () => {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="text-center p-4 bg-background/50 rounded-lg border border-primary/20">
-                    <div className="text-2xl font-bold text-primary">4+</div>
-                    <div className="text-sm text-muted-foreground">Anos de experiência</div>
-                  </div>
-                  <div className="text-center p-4 bg-background/50 rounded-lg border border-primary/20">
-                    <div className="text-2xl font-bold text-primary">500+</div>
-                    <div className="text-sm text-muted-foreground">Clientes atendidos</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
         {/* Botão CTA no final da seção */}
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg" className="w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-12 py-4 sm:py-7 font-bold leading-tight w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-8 py-4 sm:py-6 mb-16 hover:scale-105 hover:shadow-glow shadow-glow animate-pulse duration-2000 transition-all font-bold rounded-md text-center leading-tight">
+          <Button variant="hero" size="lg" className="w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-12 py-4 sm:py-7 font-bold leading-tight w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-8 py-4 sm:py-6 mb-4 hover:scale-105 hover:shadow-glow shadow-glow animate-pulse-scale transition-all font-bold rounded-md text-center leading-tight">
             <span className="block sm:inline">[QUERO MEU GESTOR DE</span>
             <span className="block sm:inline sm:ml-1">TRÁFEGO IMOBILIÁRIO PRO]</span>
           </Button>

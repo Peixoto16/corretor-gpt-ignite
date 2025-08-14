@@ -33,7 +33,7 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-  Mesmo sendo <span className="text-primary font-extrabold drop-shadow-glow animate-fade-in-up">corretor</span> de Imóveis autonomo, sem <span className="text-primary font-extrabold drop-shadow-glow animate-fade-in-up" style={{animationDelay: '0.3s'}}>gestor</span> de tráfego e sem <span className="text-primary font-extrabold drop-shadow-glow animate-fade-in-up" style={{animationDelay: '0.5s'}}>depender de agências</span>.
+  Mesmo sendo <span className="text-primary font-extrabold drop-shadow-glow animate-fade-in-up">corretor</span> de Imóveis autônomo, sem <span className="text-primary font-extrabold drop-shadow-glow animate-fade-in-up" style={{animationDelay: '0.3s'}}>gestor</span> de tráfego e sem <span className="text-primary font-extrabold drop-shadow-glow animate-fade-in-up" style={{animationDelay: '0.5s'}}>depender de agências</span>.
 </p>
 
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
@@ -42,7 +42,7 @@ const HeroSection = () => {
 
           {/* CTA Button */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-            <Button variant="hero" size="lg" className="w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-8 py-4 sm:py-6 mb-16 hover:scale-105 hover:shadow-glow shadow-glow animate-pulse duration-2000 hover:scale-105 hover:shadow-glow transition-all font-bold rounded-md text-center leading-tight">
+            <Button variant="hero" size="lg" className="w-full sm:w-auto text-xs sm:text-lg px-3 sm:px-8 py-4 sm:py-6 mb-8 hover:scale-150 hover:shadow-glow shadow-glow animate-pulse-scale transition-all font-bold rounded-md text-center leading-tight">
   <span className="block sm:inline">[QUERO MEU GESTOR DE</span>
   <span className="block sm:inline sm:ml-1">TRÁFEGO IMOBILIÁRIO PRO]</span>
 </Button>

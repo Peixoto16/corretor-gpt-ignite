@@ -82,6 +82,10 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 		keyframes: {
+			'pulse-scale': {
+				'0%, 100%': { transform: 'scale(1)' },
+				'50%': { transform: 'scale(1.01)' }
+			},
 			'accordion-down': {
 				from: {
 					height: '0'
@@ -162,6 +166,7 @@ export default {
 			}
 		},
 		animation: {
+			'pulse-scale': 'pulse-scale 5s infinite',
 			'accordion-down': 'accordion-down 0.2s ease-out',
 			'accordion-up': 'accordion-up 0.2s ease-out',
 			'fade-in-up': 'fade-in-up 0.6s ease-out',

@@ -16,7 +16,7 @@ const PricingSection = () => {
           </p>
 
           {/* Price Card */}
-          <div className="bg-gradient-dark p-8 rounded-2xl border-2 border-primary/30 shadow-glow max-w-2xl w-full mx-auto mb-12 hover:scale-105 hover:shadow-elegant transition-all duration-300 animate-pulse group" style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}>
+          <div className="bg-gradient-dark p-8 rounded-2xl border-2 border-primary/30 shadow-glow max-w-2xl w-full mx-auto mb-4 hover:scale-105 hover:shadow-glow shadow-glow animate-pulse-scale transition-all font-bold rounded-md text-center leading-tight" style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}>
             <div className="text-center">
               {/* Original Price Crossed Out */}
               <div className="text-lg text-muted-foreground line-through mb-2 group-hover:animate-pulse">
@@ -69,8 +69,8 @@ const PricingSection = () => {
               </div>
               <div>
                 <BadgeCheck className="mx-auto w-8 h-8 text-green-500 mb-2" />
-                <div className="font-semibold mb-1">Resultados Garantidos</div>
-                <div className="text-sm text-muted-foreground">Estratégia validada</div>
+                <div className="font-semibold mb-1">Estratégia Validada</div>
+                <div className="text-sm text-muted-foreground">Mais de 50 milhões gerados em VGV</div>
               </div>
               <div>
                 <Headset className="mx-auto w-8 h-8 text-green-500 mb-2" />

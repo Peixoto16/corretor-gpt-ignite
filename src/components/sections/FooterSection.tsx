@@ -12,7 +12,7 @@ const FooterSection = () => {
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <span>🔒 Site Seguro</span>
                   <span>⚡ Acesso Imediato</span>
-                  <span>🎯 Resultados Garantidos</span>
+                  <span>🎯 Resultados Reais</span>
                 </div>
               </div>
             </div>
